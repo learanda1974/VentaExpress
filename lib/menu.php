@@ -1,34 +1,27 @@
+<!DOCTYPE html>
+
 <div class="list-group">
-<a class="list-group-item" href="<?=URLBASE;?>"><i class="fa fa-home fa-2x"></i> Venta Express</a>
-<a id="subIngreso" class="list-group-item submenu" href="<?=URLBASE;?>contenido/Ingreso.php" ><i class="fa fa-sun-o fa-2x"></i> Ingreso Venta</a>
-<a id="subInforme" class="list-group-item submenu" href="<?=URLBASE;?>contenido/Informes.php" ><i class="fa fa-sun-o fa-2x"></i> Ingreso Informes</a>
-<a id="subConsulta" class="list-group-item submenu" href="<?=URLBASE;?>contenido/Consulta.php" ><i class="fa fa-sun-o fa-2x"></i> Ingreso Consulta</a>
 
+<a class="list-group-item" data-remote="true" href="#sub_categoria_4" id="categoria_4" data-toggle="collapse" data-parent="#sub_categoria_4" style="padding-left: 25px;">
+          <span class="fa fa-shopping-cart fa-lg fa-fw"></span>
+          <span style="margin-left: 25px;">Venta Express</span>
+          <span class="menu-ico-collapse"><i class="fa fa-chevron-down"></i></span>
+        </a>
 
-<!-- <div class="list-group">
-    <a class="list-group-item" href="<?=URLBASE;?>"><i class="fa fa-home fa-2x"></i> Home</a>
-    <a id="prisolicitud" class="list-group-item" href="#" data-toggle="tooltip" data-placement="right" title="Acceda a las solicitudes"><i class="fa fa-file-o fa-2x"></i> Solicitudes</a>
-    <a id="subsolicitud" class="list-group-item submenu" href="<?=URLBASE;?>contenido/formvacaciones.php" ><i class="fa fa-sun-o fa-2x"></i> Ingreso Vacaciones</a>
-    <a id="subsolicitud-lista" class="list-group-item submenu" href="<?=URLBASE;?>contenido/formlistavacaciones.php" ><i class="fa fa-sun-o fa-2x"></i> Ver Vacaciones Solicitadas</a>
-    <a class="list-group-item" href="#"><i class="fa fa-birthday-cake fa-2x"></i> Cumpleaños</a>
-    <a class="list-group-item" href="#"><i class="fa fa-file-o fa-2x"></i> Certificados</a>
-    <a class="list-group-item" href="#"><i class="fa fa-file-o fa-2x"></i> Resumen</a>
-    </div> -->
-
-    <script>
-        $("#prisolicitud").on( "click", function( event ) {
-            if(($("[id*=subsolicitud]").css("display")!="none")){
-                 $("[id*=subsolicitud]").css("display","none");
-            }
-            else{
-                $("[id*=subsolicitud]").show();
-                $("[id*=subsolicitud]").css("display","block");
-            }
-                
-                
-            });
-        
-        $('[data-toggle="tooltip"]').tooltip(); 
-    </script>
-    
+        <div class="collapse list-group-submenu" id="sub_categoria_4">
+          
+          <a data-remote="true" href="#sub_categoria_2" class="list-group-item sub-item" data-parent="#sub_categoria_4" data-parent="#sub_categoria_2" style="padding-left: 78px;">
+                <span style="margin-left: 25px;">Ingreso</span>
+                <span class="menu-ico-collapse"><i class="fa fa-chevron-down"></i></span>
+          </a>
+          
+            <div class="collapse list-group-submenu" id="sub_categoria_2">
+                <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_2" style="padding-left: 78px;">Producto</a>
+                <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_2" style="padding-left: 78px;">Venta</a>          
+                <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_2" style="padding-left: 78px;">Bodega</a>          
+            </div>  
+            
+          <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_4" style="padding-left: 78px;">Informes</a>
+          <a href="#" class="list-group-item sub-item" data-parent="#sub_categoria_4" style="padding-left: 78px;">Consultas</a>          
+        </div>
 </div>
